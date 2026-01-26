@@ -1,0 +1,21 @@
+.todoitem{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: left;
+    text-transform: capitalize;
+    justify-content: space-between;
+}
+.todoitem span{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.todoitem span p{
+   align-content: center;
+padding: 0;
+   margin: 0;
+}
