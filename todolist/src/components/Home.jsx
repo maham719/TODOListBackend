@@ -10,13 +10,13 @@ import { MdOutlineDelete } from "react-icons/md";
 const Home = () => {
   const [todos, setTodos] = useState([])
  useEffect(() => {
-   axios.get('http://localhost:3001/get')
+   axios.get('https://todolistbackend-8aqk.onrender.com/get')
    .then(result=>setTodos(result.data))
    .catch(err=>console.log(err))
  }, [])
  
  const handleEdit=(id)=>{
-axios.put('http://localhost:3001/update' +id)
+axios.put('https://todolistbackend-8aqk.onrender.com/update' +id)
    .then(result=>{
     location.reload()
    })
@@ -25,7 +25,7 @@ axios.put('http://localhost:3001/update' +id)
  
 
  const handleDelete=(id)=>{
-  axios.delete('http://localhost:3001/delete' +id)
+  axios.delete('https://todolistbackend-8aqk.onrender.com/delete' +id)
   .then(result=>{
     location.reload()
   }).catch(err=>console.log(err))
